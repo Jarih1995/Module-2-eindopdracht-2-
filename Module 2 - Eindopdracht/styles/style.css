@@ -1,0 +1,309 @@
+@import url(/Users/jari/Documents/Jari/Winc Academy/Front-end development/Module 2/Module 2 - Eindopdracht/styles/style.css);
+@import url(/Users/jari/Documents/Jari/Winc Academy/Front-end development/Module 2/Module 2 - Eindopdracht/styles/style.css);
+html {
+  background-color: #c3cfe2;
+  margin: 20px;
+  font-family: Roboto, Helvetica, sans-serif;
+  font-weight: 400;
+  display: -ms-grid;
+  display: grid;
+}
+
+html {
+  background-color: #c3cfe2;
+  margin: 20px;
+  font-family: Roboto, Helvetica, sans-serif;
+  font-weight: 400;
+  display: -ms-grid;
+  display: grid;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  -ms-grid-rows: 450px 450px 450px 450px 450px 450px;
+      grid-template-rows: 450px 450px 450px 450px 450px 450px;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card2 {
+  position: relative;
+  width: 300px;
+  border-radius: 20px;
+  display: block;
+}
+
+.card2--image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border-radius: 10px;
+}
+
+.card2--hover {
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  opacity: 0.0;
+  height: 100%;
+  width: 100%;
+  background-color: #000f22;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  border-radius: 10px;
+}
+
+.card2:hover .card2--image {
+  opacity: 0.1;
+}
+
+.card2:hover:hover .card2--hover {
+  opacity: 1;
+}
+
+.card2--hover__button {
+  padding: 20px;
+  position: relative;
+  top: 40%;
+  margin: 0 auto;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+    -ms-grid-rows: 450px 450px 450px;
+        grid-template-rows: 450px 450px 450px;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 33% 33% 33%;
+        grid-template-columns: 33% 33% 33%;
+    -ms-grid-rows: 450px 450px;
+        grid-template-rows: 450px 450px;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+html {
+  background-color: #c3cfe2;
+  margin: 20px;
+  font-family: Roboto, Helvetica, sans-serif;
+  font-weight: 400;
+  display: -ms-grid;
+  display: grid;
+}
+
+.menu-left {
+  position: fixed;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+  top: 25%;
+  right: 0%;
+}
+
+.menu-left li {
+  width: 200px;
+  padding: 20px 20px 20px 20px;
+  list-style: none;
+  left: 190px;
+  position: relative;
+  height: 20px;
+}
+
+.menu-left li:hover {
+  -webkit-transform: translateX(-180px);
+          transform: translateX(-180px);
+  -webkit-transition: translateX, .5s ease;
+  transition: translateX, .5s ease;
+  /*     &::after{
+            content: 'test';
+            text-decoration-line: underline;
+            font-size: 20px;
+            color: white;
+            padding-left: 40px;
+            justify-self: center;
+            align-self: center;
+            position: relative;
+            width: 200px;
+} */
+}
+
+.menu-left i {
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  color: white;
+  height: 30px;
+  width: 30px;
+}
+
+.menu-left a {
+  padding-left: 20px;
+  color: #fff;
+  font-size: 12px;
+}
+
+.menu-left__social-media__blog {
+  background-color: #e17b77;
+  width: 30px;
+}
+
+.menu-left__social-media__facebook {
+  background-color: #3b5998;
+}
+
+.menu-left__social-media__twitter {
+  background-color: #00aced;
+}
+
+.menu-left__social-media__github {
+  background-color: #333;
+}
+
+.menu-left__social-media__linkedin {
+  background-color: #007bb6;
+}
+
+.fa-laptop-code {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f5fc";
+}
+
+.fa-twitter {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f099";
+}
+
+.fa-linkedin-in {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f0e1";
+}
+
+.fa-facebook-f {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f39e";
+}
+
+.fa-github {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f09b";
+}
+
+.card {
+  width: 300px;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+}
+
+.card--normal {
+  width: 300px;
+  height: auto;
+  border: 0px solid #333;
+  border-radius: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card__header {
+  background-color: #fff;
+  border-top-right-radius: 18px;
+  border-top-left-radius: 18px;
+  padding-bottom: 25px;
+}
+
+.card__header-tekst {
+  padding: 20px;
+  line-height: 1.5em;
+  color: #727272;
+  font-size: 16px;
+}
+
+.card__photo {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 80px;
+  height: 80px;
+  border: #fff 5px solid;
+  border-radius: 300px;
+  position: relative;
+  top: -180px;
+}
+
+.card__photo.card__photo img {
+  width: 80px;
+  height: 80px;
+  border-radius: 300px;
+}
+
+.card__footer {
+  background-color: #686de0;
+  width: 300px;
+  padding-top: 40px;
+  padding-bottom: 10px;
+  text-align: center;
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+}
+
+.card__footer h2 {
+  color: #fff;
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: -10px;
+}
+
+.card__footer h4 {
+  color: #f4f4f4;
+  font-weight: 400;
+  font-size: 14px;
+  opacity: 0.8;
+}
+/*# sourceMappingURL=style.css.map */

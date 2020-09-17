@@ -1,0 +1,76 @@
+@import './constrains';
+@import './style.css';
+
+.grid{
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows:  450px 450px 450px 450px 450px 450px;
+  justify-items: center;
+  align-items: center;
+}
+
+.card2{
+    position: relative;
+    width: 300px;
+    border-radius: 20px;
+    display: block;
+  }
+  
+  .card2--image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    border-radius: 10px;
+  }
+  
+  .card2--hover {
+    transition: .5s ease;
+    opacity: 0.0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 15, 34);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  .card2:hover .card2--image {
+    opacity: 0.1;
+  }
+  
+  .card2:hover:hover .card2--hover {
+    opacity: 1;
+  }
+  
+  .card2--hover__button {
+    padding: $padding;
+    position: relative;
+    top: 40%;
+    margin: 0 auto;
+    align-self: center;
+  }
+
+  @media (min-width: 768px) {
+    .grid{
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-rows:  450px 450px 450px;
+      justify-items: center;
+      align-items: center;
+    }
+  }
+  @media (min-width: 1024px) {
+    .grid{
+      display: grid;
+      grid-template-columns: 33% 33% 33%;
+      grid-template-rows:  450px 450px;
+      justify-items: center;
+      align-items: center;
+    }
+  }

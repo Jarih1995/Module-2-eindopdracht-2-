@@ -1,0 +1,11 @@
+$backgroundColor: #c3cfe2; 
+$padding: 20px;
+
+
+html { 
+    background-color:$backgroundColor;
+    margin: $padding;
+    font-family: Roboto, Helvetica, sans-serif;
+    font-weight: 400;
+    display: grid;
+}

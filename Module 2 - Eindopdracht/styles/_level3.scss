@@ -1,0 +1,102 @@
+@import './constrains';
+@import './style.css';
+
+
+.menu-left{
+    position: fixed;
+    align-content: flex-end;
+    top: 25%;
+    right: 0%;
+
+    li {
+        width: 200px;
+        padding: 20px 20px 20px 20px;
+        list-style: none;
+        left: 190px;
+        position: relative;
+        height: 20px;
+    }
+
+    li:hover{
+        transform: translateX(-180px);
+        transition: translateX, .5s ease;
+
+
+/*     &::after{
+            content: 'test';
+            text-decoration-line: underline;
+            font-size: 20px;
+            color: white;
+            padding-left: 40px;
+            justify-self: center;
+            align-self: center;
+            position: relative;
+            width: 200px;
+} */    
+        }
+
+    i{
+        font-variant: normal;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        color:white;
+        height: 30px;
+        width: 30px;
+
+    }
+
+    a {
+        padding-left: 20px;
+        color: #fff;
+        font-size: 12px;
+    }
+
+}
+.menu-left__social-media__blog {
+    background-color: #e17b77;
+    width: 30px
+}
+
+.menu-left__social-media__facebook {
+    background-color: #3b5998;
+
+}
+.menu-left__social-media__twitter {
+    background-color: #00aced;
+}
+
+.menu-left__social-media__github {
+    background-color: #333;
+}
+
+.menu-left__social-media__linkedin {
+    background-color: #007bb6;
+}
+
+.fa-laptop-code{
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900;
+    content: "\f5fc";
+}
+
+.fa-twitter{
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900;
+    content: "\f099";
+}
+.fa-linkedin-in{
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900;
+    content: "\f0e1";
+}
+.fa-facebook-f{
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900;
+    content: "\f39e";
+}
+.fa-github{
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900;
+    content: "\f09b";
+}
+
